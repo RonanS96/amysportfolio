@@ -16,7 +16,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('img/NW-View-Entire-Building.jpg');
+    /* Alternative image here: img/NW-View-Entire-Building.jpg */
+    background-image: url('img/colour-splash-large.jpg');
     min-height: 100%;
 }
 

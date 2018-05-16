@@ -1,0 +1,374 @@
+<!-- Project page - Waterfall Kindergarten.
+   - This project was carried out over four coursework assignments and is described in more detail on this page.
+   -
+   - Website by: Ronan Smith (URL: http://ronanjsmith.com).
+   -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../../img/setsquare2.jpg">
+    <title>Amy's Portfolio - AT2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-dark-grey">
+      <div class="w3-bar w3-dark-grey" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../../" class="w3-bar-item w3-button">Amy's Portfolio</a>
+        <a href="../../#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="../../#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> WORK</a>
+        <a href="../../#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT ME</a>
+        <a href="../../#home" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-home"></i> HOME</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="../../#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT ME</a>
+        <a href="../../#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> WORK</a>
+        <a href="../../#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Main Parallax Image with Title Text -->
+    <div id="top" class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PROJECT</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h4 class="w3-center"><b>Architectural Technology 2 - Waterfall Kindergarten (year 2, trimester 2)</b></h4>
+      <p class="w3-center">Carried out over four coursework assignments, shown below.</p><br>
+      <p class="w3-center"><em>Click on the images to make them bigger...</em></p><br>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="../../img/Picture1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Waterfall Kindergarten" alt="Waterfall Kindergarten">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/Childrens-Area-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Childrens Area" alt="Childrens Area">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/Childrens-Area-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Childrens Area" alt="Childrens Area">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/Kitchen.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Kitchen" alt="Kitchen">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="../../img/Entrance.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Entrance" alt="Entrance">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/waterfall-logo-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Waterfall Logo" alt="Waterfall Logo">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/South-View-Entire-Building.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Kindergarten South View" alt="Kindergarten South View">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../../img/NW-View-Entire-Building.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Kindergarten North-West View" alt="Kindergarten North-West View">
+        </div>
+      </div>
+      <!-- <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">FIND OUT MORE</button> -->
+      <hr>
+    </div>
+
+    <!-- Container (Work Section - inside portfolio) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work images -->
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="../../img/CW1/Picture1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Kindergarten Guntramsdorf Friespiel" alt="Kindergarten Guntramsdorf Friespiel" width="500" height="333">
+          <img src="../../img/CW1/Picture2.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Kindergarten Guntramsdorf Friespiel" alt="Kindergarten Guntramsdorf Friespiel" width="500" height="333">
+        </div>
+
+        <!-- Work description text -->
+        <div id="CW1" class="w3-col m6 w3-padding-large">
+          <h4><b>Coursework 1 - Background Research</b></h4>
+          <p>
+            In coursework 1 I was asked to research the Kindergarten Guntramsdorf Friespiel situated in Guntramsdorf, South Austria.
+          </p>
+          <p>
+            Guntramsdorf Friespiel was designed by G.O.Y.A (Group Of Young Architects).
+          </p>
+          <p>
+            In this high-quality open space, the kindergarten was embedded as an open, village structure which translates from the name ‘Guntramsdorf Friespiel’ to ’Free Game.’  The architecture is divided into several buildings, thus maintaining a child-friendly scale.
+          </p>
+          <p>
+            I was most fascinated by this kindergarten for the clear use of differing materials to show a clear distinction between the staff and administrative spaces to the children's learning zones but for it to still appear as one connected building. I decided to develop this further and take inspiration from this to my own designs.
+          </p>
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work description text -->
+        <div id="CW2" class="w3-col m6 w3-left w3-padding-large">
+          <h4><b>Coursework 2 - Design a new Kindergarten in Edinburgh</b></h4>
+          <p>
+            For coursework 2 I had been asked to further my studies from coursework 1 and create my own kindergarten looking at the criteria for a kindergarten but also the space required for the children.
+          </p>
+          <p>
+            When first given the site I had to consider how the site itself would actually work and where I felt it would best fit my kindergarten.
+          </p>
+          <p>
+            The brief for coursework 2 asked for 2 group spaces (each suitable for 15 children), an internal toy store, children's toilets and cloakroom, managers office, administration office, kitchen, staff room, staff toilet, general storage and an external toy store.
+          </p>
+            Looking at the brief and the space required for the number of children within the building, this was my concept design and the design I carried through the remainder of the coursework.
+          </p>
+          <p>
+            Floor plan and elevations created on Revit.
+          </p>
+          <p>
+            From research of the local area I found Tipperlinn Road to be a very close-nit village and has a lot of history behind it.
+          </p>
+          <p>
+            Many years ago Tipperlinn Road was largely known for its large supply of water to Edinburgh and so the name Tipperlinn Road came about from the Gaelic translation ‘the well of the waterfall’  and so I decided to name my kindergarten Waterfall.
+          </p>
+          <p>
+            As a way to in keep with the local community and understand their needs and wants I find this name as least intrusive and community welcoming.
+          </p>
+          <p>
+            The most important vision I had for my kindergarten was the flow of the building between the staff and children zones.
+          </p>
+          <p>
+            I decided to take inspiration from hospitals and the use of coloured lines to direct the public to their appropriate departments and so, I incorporated this into my kindergarten allowing children and parents to enter through the main reception and towards the reception desk where the children are to follow their age groups coloured line to the ‘house’ cloakroom and onto their rooms.
+          </p>
+          <p>
+            Floor plan created on Revit.
+          </p>
+          <p>
+            The flow of Waterfall kindergarten continues throughout the building and into the landscape.
+          </p>
+          <p>
+            I have three glass sliding door exits to different gardens and functions. From the 3-4 year old children’s room, the children are lead out to a senses garden where the children can grow, smell, touch and feel all different materials or objects. The central activity zone leads out to a vegetable/fruit patch where both the children attending the kindergarten and the local community could, perhaps, grow there own tomatoes and use this to make food. The final garden space leads out from the 4-5 year olds room to a further learning zone with a small auditorium space, water tables to play at and contouring landscapes.
+          </p>
+        </div>
+        <!-- Work images -->
+        <div class="w3-col m6 w3-padding-large">
+          <img src="../../img/CW2/Picture1.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
+          <img src="../../img/CW2/Picture2.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
+          <img src="../../img/CW2/Picture3.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="" alt="" width="500" height="333">
+          <img src="../../img/CW2/Picture4.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Front view" alt="Front view" width="500" height="333">
+          <img src="../../img/CW2/Picture5.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Front view" alt="Front view" width="500" height="333">
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work images -->
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="../../img/CW3/Picture1.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Waterfall Kindergarten - Side View" alt="Waterfall Kindergarten - Side View" width="500" height="333">
+          <img src="../../img/CW3/Picture3.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="External wall to Lean-To Roof detail" alt="External wall to Lean-To Roof detail" width="500" height="333">
+          <img src="../../img/CW3/Picture4.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="External wall to flat roof detail" alt="External wall to flat roof detail" width="500" height="333">
+          <img src="../../img/CW3/Picture5.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Lean-To Roof to Flat Roof Detail" alt="Lean-To Roof to Flat Roof Detail" width="500" height="333">
+          <img src="../../img/CW3/Picture2.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="External view (Revit)" alt="External view (Revit)" width="500" height="333">
+          <img src="../../img/CW3/Picture6.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="External view (Revit)" alt="External view (Revit)" width="500" height="333">
+          <img src="../../img/CW3/Picture7.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Internal view (Revit)" alt="Internal view (Revit)" width="500" height="333">
+          <img src="../../img/CW3/Picture8.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Internal view (Revit)" alt="Internal view (Revit)" width="500" height="333">
+        </div>
+
+        <!-- Work description text -->
+        <div id="CW3" class="w3-col m6 w3-padding-large">
+          <h4><b>Coursework 3 - Provide More Detail about the Building</b></h4>
+          <p>
+            In coursework 3 I was asked to give 5 further details within my kindergarten.  For my coursework I decided to focus on my ground floor, external wall to lean-to roof, internal to external wall detail, external wall to flat roof detail and lean-to roof to flat roof.
+          </p>
+          <p>
+            Details of the structural and architectural materials used are outlined through these sections.
+          </p>
+          <p>
+            <b>Ground Floor Detail:</b>
+          </p>
+          <p>
+            - 5mm White tile finish lino<br>
+            - 60mm Concrete screed with Warm up In screed Under floor heating.<br>
+            - Fixing strips to be placed after pouring 20mm of concrete<br>
+            - Remaining 40mm concrete to be poured above.<br>
+            - 60mm Thermafloor TF70 Insulation Board<br>
+            - 150mm Concrete Floor Slab.<br>
+            - DPM Minimum 150mm above ground.<br>
+            - 12mm Sand<br>
+            - 150mm Hardcore<br>
+          </p>
+          <p>
+            <b>Externall Wall to Lean-To Roof Detail:</b>
+          </p>
+          <p>
+            - 5mm Roofing felt topped with small aggregate.<br>
+            - Vapour Retarder<br>
+            - 304 x 47 Timber Joist at 400 centres. Span 10.45m<br>
+            - 147 x 47 Chords to allow for services and to be filled with 60mm Rockwool Cladding Roll.<br>
+            - 50 x 25 Treated Timber<br>
+            - 18mm White plywood fascia. Angled at base to provide drip<br>
+            - 18mm plywood soffit with air vents at 45mm diameter, every 1200mm.<br>
+            - 100 x 45mm Timber wall plate fixed with steel anchor bolts.<br>
+            - 1200mm Twisted holding down strips fixed to internal block and up to every 3rd timber joist. <br>
+          </p>
+          <p>
+            <b>Internal Wall to External Wall Detail:</b>
+          </p>
+          <p>
+            - Internal Timber stud partition wall is joined to brick/stone external wall with a masonry screw.<br>
+            - Plasterboard will be attached to timber studs with Gyproc drywall screws at 400mm horizontal planes.
+              Gyproc sealant can be used for optimum acoustic insulation.<br>
+            - Kingspan Thermawall TW55 insulation between timber studs.<br>
+            - Gypsum Plasterboard to wrap at internal points leaving a flush appearance<br>
+            - 12.5 mm Gypsum Plasterboard. <b>FireLine plasterboard and water resistant plasterboard to be used in intermediate zones.</b><br>
+          </p>
+          <p>
+            <b>External Wall to Flat Roof Detail:</b>
+          </p>
+          <p>
+            - 5mm Roofing felt topped with fine aggregate. Felt to run to edge of roof down to gutter.<br>
+            - Vapour Retarder<br>
+            - Declivity plate to allow for degree on flat roof. 4 degrees.<br>
+            - 219 x 47 Timber easi-Joist at 400 centres. Span 7.7m
+              122 x 47 Chords to allow for services and to be filled with 60mm Rockwool Cladding roll<br>
+            - 50 x 25 Treated Timber<br>
+            - 18mm C24 Timber fascia board.
+              Angled at base to provide drip<br>
+            - 18mm plywood soffit with air vents at 45mm diameter, every 1200mm.<br>
+            - 100 x 45mm Timber wall plate fixed with steel anchor bolts.<br>
+            - 1200mm Twisted holding down strips fixed to internal block and up to every 3rd timber joist
+              Hidden in place by plasterboard<br>
+          </p>
+          <p>
+            <b>Lean-To Roof to Flat Roof Detail:</b>
+          </p>
+          <p>
+            - 5mm Roofing felt topped with small aggregate.<br>
+            - Vapour Retarder<br>
+            - 304 x 47 Timber Joist at 400 centres. Span 10.45m
+              147 x 47 Chords to allow for services and to be filled with 60mm Rockwool Cladding Roll.<br>
+            - 50 x 25 Treated Timber<br>
+            - 18mm White plywood fascia.
+              Angled at base to provide drip<br>
+            - 18mm plywood soffit with air vents at 45mm diameter, every 1200mm.<br>
+            - 100 x 45mm Timber wall plate fixed with steel anchor bolts.<br>
+            - Led flashing. Running into block mortar.<br>
+            - Render beading, dripping to led flashing <br>
+            - 47 x 75mm Angle fillet<br>
+          </p>
+          <p>
+            <b>External Visual Appearance:</b>
+          </p>
+          <p>
+            To in keep with surrounding buildings I decided to use Ashler stone as my external material in the kindergarten zones and a white render on the staff/entrance to incorporate the use of different materials but to also create a flow between staff and children zones. This was where my inspiration from Guntramsdorf Friespiel was taken.
+          </p>
+          <p>
+            <b>Internal Visual Appearance:</b>
+          </p>
+          <p>
+            Visual appearance of the building internally, 3-4 year old children's room looking out to the sense garden. Both rooms, 3-4 year olds and 4-5 year olds are similar in finish and style.
+          </p>
+          <p>
+            It was my decision to leave the rooms with a lot of design opportunities for the children and the community to design and create their own safe and fun spaces.
+          </p>
+          <p>
+            Visual appearance of the building internally, 4-5 year old children's room and the central activity zone with kitchen on the right with a half partition wall and looking out to the vegetable/fruit patch.
+          </p>
+          <p>
+            Renders created on Revit.  For more details, view the PDF portfolio document <a target="_blank" href="../../Portfolio/40276994AT2CW4Portfolio.pdf">here</a>.
+          </p>
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work description text -->
+        <div id="CW4" class="w3-col m6 w3-left w3-padding-large">
+          <h4><b>Coursework 4 - Summarise and Create a Portfolio Document</b></h4>
+          <p>
+            Overall I was and am very happy with my design.
+          </p>
+          <p>
+            If I had to critic myself I wish I had gave more consideration to my spans within my building as, although I found a supplier of easi-joist, the length of the joists required for my roof were coming to the maximum length.
+          </p>
+          <p>
+            One other thing I feel I would change would be to incorporate more fun elements within the children's room to allow the rooms to feel more like a kindergarten instead of leaving the entire building a blank canvas for the occupants.
+          </p>
+          <p>
+            The main task of coursework 4 was to produce a portfolio document to describe my work.
+          </p>
+          <p>
+            <i class="fa fa-file-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>View portfolio document <a target="_blank" href="../../Portfolio/40276994AT2CW4Portfolio.pdf">here</a>.
+          </p>
+        </div>
+        <!-- Work images -->
+        <div class="w3-col m6 w3-padding-large">
+          <img src="../../img/CW4/Picture3.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Children's area" alt="Children's area" width="500" height="333">
+          <img src="../../img/CW4/Picture4.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Waterfall Kindergarten" alt="Waterfall Kindergarten" width="500" height="333">
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <h3>Amy Dickson • 2018</h3>
+        <a href="https://www.pinterest.co.uk/amyd996/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a> Pinterest<br>
+        <a href="https://www.linkedin.com/in/amy-dickson-693680147/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> LinkedIn<br>
+        <a href="../../CV.html" target="_blank"><i class="fa fa-file-o w3-hover-opacity"></i></a> Online CV
+      </div>
+      <p>Website by <a href="http://ronanjsmith.com" title="Ronan Smith" target="_blank" class="w3-hover-text-blue">Ronan Smith</a></p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else {
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
+    </script>
+  </body>
+</html>

@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="img/setsquare2.jpg">
     <title>Amy's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +20,8 @@
 
   <body>
     <!-- Navbar (sit on top) -->
-    <div class="w3-top w3-dark-grey">
-      <div class="w3-bar w3-dark-grey" id="myNavbar">
+    <div class="w3-top w3-white">
+      <div class="w3-bar w3-white" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
@@ -33,9 +34,9 @@
 
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
-        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">WORK</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT ME</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> WORK</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
       </div>
     </div>
 
@@ -56,7 +57,8 @@
 
         <!-- 'About Me' text -->
         <div class="w3-col m6 w3-padding-large">
-          <p><b><i class="fa fa-pencil" style="font-size:24px"></i><i class="fa fa-user w3-margin-right" style="font-size:24px"></i>Amy Dickson (Student at Edinburgh Napier University)</b></p>
+          <p><b><i class="fa fa-pencil" style="font-size:24px"></i><i class="fa fa-user w3-margin-right" style="font-size:24px"></i>Amy Dickson (Architectural Technology Student at Edinburgh Napier University)</b></p>
+
           <p>
             I began studying Architectural Technology in <a target="_blank" href="http://www.edinburghcollege.ac.uk/">Edinburgh College</a> from 2014-2016 where I achieved my HND with a B in my final year.  In college I had the chance to begin working on Revit, study fire and safety and building construction. During my time at college I was given the opportunity to carry out work experience at <a target="_blank" href="https://www.coopercromar.com/">Cooper Cromer</a> in Glasgow where I had the chance to visit site and work closely with architects within the practice.
           </p>
@@ -69,7 +71,7 @@
             I am projected to graduate in 2020 with my BSC (HONS).
           </p>
           <p>
-            <i class="fa fa-file-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>View my online CV <a target="_blank" href="">here</a>.
+            <i class="fa fa-file-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>View my online CV <a target="_blank" href="CV.html" target="_blank">here</a>.
           </p>
         </div>
       </div>
@@ -100,8 +102,10 @@
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
       <h3 class="w3-center">MY WORK</h3>
-      <h4 class="w3-center"><b>Waterfall Kindergarten</b></h4>
-      <p class="w3-center"><em>Click on the images to make them bigger</em></p><br>
+      <hr>
+      <h4 class="w3-center"><b>Architectural Technology 2 - Waterfall Kindergarten (year 2, trimester 2)</b></h4>
+      <p class="w3-center">Carried out over four coursework assignments, shown below.</p><br>
+      <p class="w3-center"><em>Click on the images to make them bigger...</em></p><br>
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="w3-row-padding w3-center">
@@ -139,13 +143,15 @@
           <img src="img/NW-View-Entire-Building.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Kindergarten North-West View" alt="Kindergarten North-West View">
         </div>
       </div>
-      <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">FIND OUT MORE</button>
+      <!-- <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">FIND OUT MORE</button> -->
+      <hr>
     </div>
 
     <!-- Container (Work Section - inside portfolio) -->
     <div class="w3-content w3-container w3-padding-64">
       <!-- Individual piece of work -->
       <div class="w3-row">
+        <!-- Work images -->
         <div class="w3-col m6 w3-center w3-padding-large">
           <img src="img/CW1/Picture1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Kindergarten Guntramsdorf Friespiel" alt="Kindergarten Guntramsdorf Friespiel" width="500" height="333">
           <img src="img/CW1/Picture2.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Kindergarten Guntramsdorf Friespiel" alt="Kindergarten Guntramsdorf Friespiel" width="500" height="333">
@@ -153,7 +159,7 @@
 
         <!-- Work description text -->
         <div class="w3-col m6 w3-padding-large">
-          <h4><b>Coursework 1</b></h4>
+          <h4><b>Coursework 1 - Background Research</b></h4>
           <p>
             In coursework 1 I was asked to research the Kindergarten Guntramsdorf Friespiel situated in Guntramsdorf, South Austria.
           </p>
@@ -166,28 +172,87 @@
           <p>
             I was most fascinated by this kindergarten for the clear use of differing materials to show a clear distinction between the staff and administrative spaces to the children's learning zones but for it to still appear as one connected building. I decided to develop this further and take inspiration from this to my own designs.
           </p>
-          <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">FIND OUT MORE</button>
         </div>
       </div>
       <!-- End of piece of work -->
       <hr>
       <!-- Individual piece of work -->
       <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <img src="img/CW2/Picture1.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
-          <img src="img/CW2/Picture2.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
-        </div>
-
         <!-- Work description text -->
-        <div class="w3-col m6 w3-padding-large">
-          <h4><b>Coursework 2</b></h4>
+        <div class="w3-col m6 w3-left w3-padding-large">
+          <h4><b>Coursework 2 - Design a new Kindergarten in Edinburgh</b></h4>
           <p>
             For coursework 2 I had been asked to further my studies from coursework 1 and create my own kindergarten looking at the criteria for a kindergarten but also the space required for the children.
           </p>
           <p>
-            When first given the site I had too consider how the site itself would actually work and where I felt would best fit my kindergarten.
+            When first given the site I had to consider how the site itself would actually work and where I felt it would best fit my kindergarten.
           </p>
-          <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">FIND OUT MORE</button>
+          <p>
+            The brief for coursework 2 asked for 2 group spaces (each suitable for 15 children), an internal toy store, children's toilets and cloakroom, managers office, administration office, kitchen, staff room, staff toilet, general storage and an external toy store.
+          </p>
+            Looking at the brief and the space required for the number of children within the building, this was my concept design and the design I carried through the remainder of the coursework.
+          </p>
+          <p>
+            Floor plan and elevations created on Revit.
+          </p>
+          <a href="Portfolio/AT2/waterfall-kindergarten.html#CW2"><button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">READ MORE</button></a>
+        </div>
+        <!-- Work images -->
+        <div class="w3-col m6 w3-padding-large">
+          <img src="img/CW2/Picture1.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
+          <img src="img/CW2/Picture2.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Area/Space for new kindergarten" alt="Area/Space for new kindergarten" width="500" height="333">
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work images -->
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="img/CW3/Picture1.png" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Waterfall Kindergarten - Side View" alt="Waterfall Kindergarten - Side View" width="500" height="333">
+          <img src="img/CW3/Picture2.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Revit Rendering of the Waterfall Kindergarten" alt="Revit Rendering of the Waterfall Kindergarten" width="500" height="333">
+        </div>
+
+        <!-- Work description text -->
+        <div class="w3-col m6 w3-padding-large">
+          <h4><b>Coursework 3 - Provide More Detail about the Building</b></h4>
+          <p>
+            In coursework 3 I was asked to give 5 further details within my kindergarten.  For my coursework I decided to focus on my ground floor, external wall to lean-to roof, internal to external wall detail, external wall to flat roof detail and lean-to roof to flat roof.
+          </p>
+          <p>
+            Details of the structural and architectural materials used are outlined through these sections.
+          </p>
+          <a href="Portfolio/AT2/waterfall-kindergarten.html#CW3"><button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">READ MORE</button></a>
+        </div>
+      </div>
+      <!-- End of piece of work -->
+      <hr>
+      <!-- Individual piece of work -->
+      <div class="w3-row">
+        <!-- Work description text -->
+        <div class="w3-col m6 w3-left w3-padding-large">
+          <h4><b>Coursework 4 - Summarise and Create a Portfolio Document</b></h4>
+          <p>
+            Overall I was and am very happy with my design.
+          </p>
+          <p>
+            If I had to critic myself I wish I had gave more consideration to my spans within my building as, although I found a supplier of easi-joist, the length of the joists required for my roof were coming to the maximum length.
+          </p>
+          <p>
+            One other thing I feel I would change would be to incorporate more fun elements within the children's room to allow the rooms to feel more like a kindergarten instead of leaving the entire building a blank canvas for the occupants.
+          </p>
+          <p>
+            The main task of coursework 4 was to produce a portfolio document to describe my work.
+          </p>
+          <p>
+            <i class="fa fa-file-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>View portfolio document <a target="_blank" href="Portfolio/40276994AT2CW4Portfolio.pdf">here</a>.
+          </p>
+          <a href="Portfolio/AT2/waterfall-kindergarten.html#CW4"><button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">READ MORE</button></a>
+        </div>
+        <!-- Work images -->
+        <div class="w3-col m6 w3-padding-large">
+          <img src="img/CW4/Picture3.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Children's area" alt="Children's area" width="500" height="333">
+          <img src="img/CW4/Picture4.jpg" onclick="onClick(this)" class="w3-round w3-image w3-hover-opacity" title="Waterfall Kindergarten" alt="Waterfall Kindergarten" width="500" height="333">
         </div>
       </div>
       <!-- End of piece of work -->
@@ -221,13 +286,14 @@
           <div class="w3-large w3-margin-bottom">
             <h3>WHERE I STUDY</h3>
             <i class="fa fa-graduation-cap fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Edinburgh Napier University<br>
-            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 9 Sighthill Ct, Edinburgh, UK, EH11 4BN<br>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 10 Colinton Rd, Edinburgh EH10 5DT<br>
             <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> University Phone: 0131 455 3555<br>
             <i class="fa fa-chrome fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Website: <a target="_blank" href="https://www.napier.ac.uk/">napier.ac.uk</a><br>
           </div>
-          <h3>CONTACT ME DIRECTLY:</h3>
-          <i class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="font-size:24px"></i> Amy Dickson</b></p>
+          <h3>CONTACT ME DIRECTLY</h3>
+          <i class="fa fa-user fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="font-size:24px"></i><b>Amy Dickson</b><br>
           <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 40276994@live.napier.com<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Available on Request<br>
         </div>
       </div>
     </div>
@@ -237,18 +303,19 @@
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
       <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
       <div class="w3-xlarge w3-section">
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i> Pinterest<br>
-        <i class="fa fa-linkedin w3-hover-opacity"></i> LinkedIn<br>
-        <i class="fa fa-file-o w3-hover-opacity"></i> Online CV
+        <h3>Amy Dickson • 2018</h3>
+        <a href="https://www.pinterest.co.uk/amyd996/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a> Pinterest<br>
+        <a href="https://www.linkedin.com/in/amy-dickson-693680147/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> LinkedIn<br>
+        <a href="CV.html" target="_blank"><i class="fa fa-file-o w3-hover-opacity"></i></a> Online CV
       </div>
-      <p>Website by <a href="http://ronanjsmith.com" title="Ronan Smith" target="_blank" class="w3-hover-text-green">Ronan Smith</a></p>
+      <p>Website by <a href="http://ronanjsmith.com" title="Ronan Smith" target="_blank" class="w3-hover-text-blue">Ronan Smith</a></p>
     </footer>
 
     <!-- Add Google Maps -->
     <script>
       function myMap()
       {
-        myCenter=new google.maps.LatLng(55.921708, -3.2820902);
+        myCenter=new google.maps.LatLng(55.9332307, -3.2157683);
         var mapOptions= {
           center:myCenter,
           zoom:12, scrollwheel: false, draggable: true,
@@ -275,7 +342,7 @@
       function myFunction() {
           var navbar = document.getElementById("myNavbar");
           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-dark-grey";
           } else {
               navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
           }
