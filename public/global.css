@@ -1,0 +1,42 @@
+html, main {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: "Lato",sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Lato",sans-serif;
+}
+
+a {
+	color: #000;
+}
+a:hover {
+	color: #e91e63;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.section {
+	padding: 30px 80px;
+}
+
+@media only screen and (max-width: 600px) {
+	.section {
+		padding: 0;
+	}
+}
+
+.section-subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 8px 16px;
+}
