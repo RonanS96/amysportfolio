@@ -1,3 +1,14 @@
+<script>
+  import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
+
+  let mounted = false;
+
+  onMount(() => {
+    mounted = true;
+  });
+</script>
+
 <style>
   .header-image {
     background-image: url("/images/AT3/SouthElevation.jpg");
@@ -30,5 +41,9 @@
 </style>
 
 <div class="header-image">
-  <div class="page-title">Amy Dickson</div>
+  {#if mounted}
+    <div class="page-title">
+      <div transition:fade={{ duration: 1500 }}>Amy Dickson</div>
+    </div>
+  {/if}
 </div>

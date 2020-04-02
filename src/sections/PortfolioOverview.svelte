@@ -1,4 +1,5 @@
 <script>
+  import { slide } from "svelte/transition";
   import SubHeader from "../SubHeader.svelte";
 
   let showMore = false;
@@ -196,7 +197,7 @@
     </button>
   </div>
   {#if showMore}
-    <div class="w3-row w3-container project-card">
+    <div class="w3-row w3-container project-card" transition:slide>
       <div class="w3-col m6 w3-padding-large">
         <div class="project-title">Building Control and Fire Engineering</div>
         <div class="grade">Grade B</div>
@@ -223,7 +224,9 @@
         <p />
       </div>
     </div>
-    <div class="w3-row w3-container project-card project-card-last">
+    <div
+      class="w3-row w3-container project-card project-card-last"
+      transition:slide>
       <div class="w3-col m6 w3-padding-large">
         <div class="project-title">Contract Administration and Practice</div>
         <div class="grade">Grade B</div>
