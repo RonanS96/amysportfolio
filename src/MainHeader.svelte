@@ -11,7 +11,7 @@
 
 <style>
   .header-image {
-    background-image: url("/images/AT3/SouthElevation.jpg");
+    background-image: url("/images/year4/Farmhouse_External.png");
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -20,23 +20,39 @@
     opacity: 0.75;
   }
 
-  @media only screen and (max-width: 600px) {
-    .header-image {
-      background-attachment: scroll;
-    }
-  }
-
   .header-image .page-title {
+    font-size: 50px;
+    font-weight: 600;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: 10px;
-    background-color: #000;
     color: white;
     text-transform: uppercase;
     padding: 12px 24px;
     white-space: nowrap;
+    background: #f4c2c2;
+    color: #000;
+    border: 3px solid #000;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header-image {
+      background-attachment: scroll;
+    }
+
+    .header-image .page-title {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 310px) {
+    .header-image .page-title {
+      font-size: 15px;
+    }
   }
 </style>
 

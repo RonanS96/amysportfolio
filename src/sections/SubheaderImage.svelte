@@ -28,8 +28,9 @@
   .header-image .section-title {
     display: inline-block;
     letter-spacing: 10px;
-    background-color: #000;
-    color: white;
+    background: #f4c2c2;
+    color: #000;
+    border: 3px solid #000;
     text-transform: uppercase;
     padding: 12px 24px;
     position: absolute;
