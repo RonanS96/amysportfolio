@@ -6,7 +6,7 @@
   footer {
     text-align: center;
     color: #fff;
-    background-color: #616161;
+    background-color: #f4c2c2;
     padding-top: 64px;
     padding-bottom: 64px;
   }

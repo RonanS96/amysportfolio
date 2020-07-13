@@ -4,7 +4,7 @@
   import { getAboutMeMarkdown } from "../utils/aboutme.js";
 
   $: copied = false;
-  $: copyTooltip = copied ? "Copied to clipboard!" : "Copy";
+  $: copyTooltip = copied ? "Copied to clipboard!" : "Copy Email";
 
   const markdown = getAboutMeMarkdown();
   const text = marked(markdown);
@@ -29,17 +29,12 @@
     padding: 12px 24px;
   }
 
-  @media only screen and (max-width: 600px) {
-    img.about-img {
-      height: 300px;
-    }
-  }
-
   .intro-text {
     font-weight: bold;
   }
 
   .fa {
+    padding-left: 2px;
     font-size: 24px;
   }
 
@@ -51,11 +46,20 @@
     text-align: center;
   }
 
-  .copy-button {
+  button.copy-button {
     cursor: pointer;
+    background: none;
+    border: none;
   }
-  .copy-button:hover {
-    color: #e91e63;
+
+  button.copy-button:focus {
+    outline: none;
+  }
+
+  @media only screen and (max-width: 700px) {
+    img.about-img {
+      height: 300px;
+    }
   }
 </style>
 
@@ -68,19 +72,21 @@
     <p class="intro-text">
       <i class="fa fa-pencil" />
       <i class="fa fa-user small-padding-right" />
-      Amy Dickson -
-      <i>Architectural Technology Student at Edinburgh Napier University</i>
     </p>
     {@html text}
   </div>
   <p class="contact">
-    If you would like to contact me, please do so through my academic email
-    address
-    <span class="bold" id="emailAddress">40276994@live.napier.com</span>
-    <i
-      on:click={copyEmail}
-      class="fa fa-copy copy-button"
-      title={copyTooltip} />
+    If you would like to contact me, please do by email:
+    <button class="copy-button" on:click={copyEmail} title={copyTooltip}>
+      <span class="bold" id="emailAddress">amyd996@hotmail.com</span>
+      {#if copied}
+        Copied!
+        <i class="fa fa-check" />
+      {:else}
+        Copy
+        <i class="fa fa-copy" />
+      {/if}
+    </button>
   </p>
   <p class="contact">
     <a href="/CV.pdf">See my CV here</a>

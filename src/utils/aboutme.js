@@ -12,15 +12,14 @@ as well as my hands-on architecture work. During my time at HTA I continued to d
 Revit and AutoCAD skills in a professional working environment, working closely with Architects 
 and BIM Coordinators.
 
-Since I completed the year in industry, I have continued my studies at [Edinburgh Napier University](https://www.napier.ac.uk/).
-Currently in my fourth year, I am working hard on a variety of projects and I am signed up to the
-Widening Participation Associate Programme where I am working as a mentor for current college 
-students looking ahead to university.
+After I completed the year in industry I continued my studies at [Edinburgh Napier University](https://www.napier.ac.uk/),
+starting as a direct entrant to second year. During my time at university I have been involved as a student assistant, teaching assistant,
+a student mentor (as part of the universities "Widening Participation Team") and in my final year I became
+the Events Lead for the newly founded Architectural Technology Society.
 
-Alongside mentoring I am also a research fellow, which involves working closely with a research team in Edinburgh Napier University, investigating 
-new insulations and retrofit of pre 1919 buildings in and around Scotlands central belt, and collecting and analysing data from pre and post insulating 
-of these buildings.
+I have a keen interest in accuracy to Detail, Retrofit, U-Value and Energy calculations
+and Regulations.
 
-I am projected to graduate in 2020 with my BSc (HONS).
+**On 9th July 2020 I was officially awarded a BSc HONS degree in Architectural Technology with Honours of the First Class.**
 `)
 }
