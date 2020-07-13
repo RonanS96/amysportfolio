@@ -120,13 +120,13 @@
         <i class="fa fa-bars" />
       {/if}
     </div>
-    <a href="#Projects">
+    <a href="#Projects" on:click={toggleOpen}>
       <div class="nav-link">
         <i class="fa fa-graduation-cap" />
         Projects
       </div>
     </a>
-    <a href="#Portfolio">
+    <a href="#Portfolio" on:click={toggleOpen}>
       <div class="nav-link">
         <i class="fa fa-th" />
         Portfolio
