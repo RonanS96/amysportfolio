@@ -4,6 +4,7 @@
 
   // Change style of navbar on scroll
   window.onscroll = function() {
+    open = false;
     updateNavbarClass();
   };
   function updateNavbarClass() {
